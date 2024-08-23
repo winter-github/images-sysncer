@@ -27,5 +27,5 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/apache/rocketmq:5.3.0 docker://registry.cn-hangzhou.aliyuncs.com/winter_dev/rocketmq:5.3.0
+         skopeo copy docker://docker.io/apacherocketmq/rocketmq-dashboard:latest docker://registry.cn-hangzhou.aliyuncs.com/winter_dev/rocketmq-dashboard:latest
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
